@@ -36,7 +36,7 @@ jobs:
             sleep 5
           done
           echo "API failed to start ❌"
-          docker logs fee-service || true
+          docker logs doordash-api || true
           exit 1
 
       - name: Setup Python
