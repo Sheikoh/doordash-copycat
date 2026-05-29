@@ -22,7 +22,7 @@ jobs:
         run: docker build -t doordash .
 
       - name: Run container
-        run: docker run -d -p 8080:8080 --name doordash-api doordash
+        run: docker run -d -p 8080:8090 --name doordash-api doordash
 
       - name: Wait for API to be ready
         run: |
